@@ -1,0 +1,428 @@
+/* ====================================
+   ABOUT PAGE
+==================================== */
+
+.about-hero{
+
+    min-height:60vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:120px 20px 80px;
+
+    background: linear-gradient(
+        rgba(10,20,18, 0.70),
+        rgba(10,20,18,.70)
+    ),
+    url("../images/mission.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:#fff;
+
+}
+
+.about-hero .container{
+
+    max-width:850px;
+
+}
+
+.about-hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+
+}
+
+.about-hero p{
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+/* OUR STORY */
+
+.our-story{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    display:block;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.8);
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    letter-spacing:3px;
+
+    color:#8d8d8d;
+
+    letter-spacing:3px;
+
+    font-size:.85rem;
+
+    margin-bottom:15px;
+
+}
+
+.story-content h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:25px;
+
+}
+
+.story-content p{
+
+    margin-bottom:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+} 
+
+/* ==========================================
+   ABOUT PAGE SECTIONS
+========================================== */
+
+.vision-section,
+.mission-section,
+.faith-section,
+.scripture-foundation,
+.journey-section{
+
+    padding:100px 0;
+
+}
+
+.values-section{
+
+    padding:100px 0;
+
+    background:#f8f8f6;
+
+}
+
+.vision-section,
+.faith-section{
+
+    background:#ffffff;
+
+}
+
+.mission-section{
+
+    background:#fdfcf9;
+
+}
+
+.scripture-foundation{
+
+    background:#f8f8f6;
+
+}
+
+.journey-section{
+
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(14,24,18,.90),
+        rgba(14,24,18,.90)
+    ),
+    url("../images/mission.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-tag{
+
+    display:inline-block;
+
+    margin-bottom:16px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#8a6d3b;
+
+}
+
+.vision-section h2,
+.mission-section h2,
+.values-section h2,
+.faith-section h2,
+.scripture-foundation h2,
+.journey-section h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:24px;
+
+    color:#18392b;
+
+}
+
+.journey-section h2{
+
+    color:#ffffff;
+
+}
+
+.vision-section p,
+.mission-section p,
+.faith-section p,
+.scripture-foundation p,
+.journey-section p{
+
+    max-width:800px;
+
+    margin:0 auto 24px;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
+
+.journey-section p{
+
+    color:rgba(255,255,255,.92);
+
+}
+
+/* ==========================================
+   VALUES, MISSION & SCRIPTURE
+========================================== */
+
+.mission-section ul{
+
+    max-width:700px;
+
+    margin:40px auto 0;
+
+    padding-left:20px;
+
+}
+
+.mission-section li{
+
+    margin-bottom:16px;
+
+    line-height:1.8;
+
+}
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.value-card{
+
+    background:#ffffff;
+
+    padding:35px 28px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.value-card h3{
+
+    margin-bottom:15px;
+
+    color:#18392b;
+
+}
+
+.scripture-foundation blockquote{
+
+    max-width:800px;
+
+    margin:30px auto;
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    line-height:1.5;
+
+    color:#18392b;
+
+}
+
+.scripture-reference{
+
+    font-weight:700;
+
+    color:#8a6d3b;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   FOUNDER, JOURNEY & RESPONSIVE
+========================================== */
+
+.founder-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.founder-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    display:block;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.founder-content p{
+
+    margin-bottom:20px;
+
+    line-height:1.9;
+
+}
+
+.journey-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.journey-buttons .btn{
+
+    min-width:200px;
+
+}
+
+@media (max-width:768px){
+
+    .founder-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .vision-section,
+    .mission-section,
+    .values-section,
+    .faith-section,
+    .scripture-foundation,
+    .journey-section{
+
+        padding:70px 0;
+
+    }
+
+    .vision-section h2,
+    .mission-section h2,
+    .values-section h2,
+    .faith-section h2,
+    .scripture-foundation h2,
+    .journey-section h2{
+
+        font-size:2rem;
+
+    }
+
+    .scripture-foundation blockquote{
+
+        font-size:1.5rem;
+
+    }
+
+}
