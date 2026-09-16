@@ -36,6 +36,7 @@
 </head>
 
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- =========================
      HEADER / NAVIGATION
 ========================= -->
@@ -56,54 +57,70 @@
     </a>
         </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="primary-navigation">
 
     <li><a href="index.html">Home</a></li>
 
     <li class="dropdown">
-        <a href="about.html">About <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="about.html" aria-haspopup="menu" aria-expanded="false">About <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-        <ul class="dropdown-menu">
-            <li><a href="about.html#our-story">Our Story</a></li>
-            <li><a href="about.html#vision">Vision & Mission</a></li>
-            <li><a href="about.html#faith">Statement of Faith</a></li>
-            <li><a href="about.html#founder">Founder</a></li>
+        <ul class="dropdown-menu" role="menu">
+            <li role="none"><a href="about.html#our-story" role="menuitem">Our Story</a></li>
+            <li role="none"><a href="about.html#vision" role="menuitem">Vision & Mission</a></li>
+            <li role="none"><a href="about.html#faith" role="menuitem">Statement of Faith</a></li>
+            <li role="none"><a href="about.html#founder" role="menuitem">Founder</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
-        <a href="resources.html">Resources <i class="fa-solid fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-            <li><a href="resources.html#reflections">Reflections</a></li>
-            <li><a href="resources.html#daily-word">Daily Word</a></li>
-            <li><a href="resources.html#bible-studies">Bible Studies</a></li>
+        <a href="resources.html" aria-haspopup="menu" aria-expanded="false">Resources <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu" role="menu">
+            <li role="none"><a href="resources.html#reflections" role="menuitem">Reflections</a></li>
+            <li role="none"><a href="resources.html#daily-word" role="menuitem">Daily Word</a></li>
+            <li role="none"><a href="resources.html#bible-studies" role="menuitem">Bible Studies</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
-        <a href="media.html">Media <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="media.html" aria-haspopup="menu" aria-expanded="false">Media <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-        <ul class="dropdown-menu">
-            <li><a href="media.html#worship">Worship</a></li>
-            <li><a href="media.html#messages">Messages</a></li>
-            <li><a href="media.html#podcast">Podcast</a></li>
+        <ul class="dropdown-menu" role="menu">
+            <li role="none"><a href="media.html#worship" role="menuitem">Worship</a></li>
+            <li role="none"><a href="media.html#messages" role="menuitem">Messages</a></li>
+            <li role="none"><a href="media.html#podcast" role="menuitem">Podcast</a></li>
         </ul>
     </li>
 
     <li class="dropdown">
-        <a href="community.html" class="active">
-    Community <i class="fa-solid fa-chevron-down"></i>
+        <a href="community.html" class="active" aria-haspopup="menu" aria-expanded="false">
+    Community <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
 </a>
-        <ul class="dropdown-menu">
-            <li><a href="community.html#prayer">Prayer Requests</a></li>
-            <li><a href="community.html#testimonies">Testimonies</a></li>
-            <li><a href="community.html#contact">Contact</a></li>
+        <ul class="dropdown-menu" role="menu">
+            <li role="none"><a href="community.html#prayer" role="menuitem">Prayer Requests</a></li>
+            <li role="none"><a href="community.html#testimonies" role="menuitem">Testimonies</a></li>
+            <li role="none"><a href="community.html#contact" role="menuitem">Contact</a></li>
         </ul>
     </li>
 
 </ul>
+
+<button
+    class="menu-toggle"
+    type="button"
+    aria-label="Open Menu"
+    aria-expanded="false"
+    aria-controls="primary-navigation">
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+</button>
+
+<a
+    href="community.html#prayer"
+    class="nav-button"
+    aria-label="Request prayer and counseling">
+    Request Prayer
+</a>
+
 </nav>
-            
 <!-- =========================
      HERO CONTENT
 ========================= -->
@@ -141,14 +158,16 @@
 <div class="scroll-indicator">
 
     <a href="#prayer">
-        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
     </a>
 
 </div>
 </header>
 
+<main id="main-content">
+
 <!-- =========================
-     FEATURED WORSHIP
+     PRAYER REQUESTS
 ========================= -->
 
 <section class="worship reveal" id="prayer">
@@ -170,7 +189,7 @@
         <div class="feature-grid">
 
             <div class="feature-card">
-    <div class="feature-icon">🙏</div>
+    <div class="feature-icon" aria-hidden="true">🙏</div>
 
     <h3>Share Your Prayer Request</h3>
 
@@ -180,7 +199,7 @@
 </div>
 
             <div class="feature-card">
-    <div class="feature-icon">🤝</div>
+    <div class="feature-icon" aria-hidden="true">🤝</div>
 
     <h3>Pray for Others</h3>
 
@@ -190,7 +209,7 @@
 </div>
 
            <div class="feature-card">
-    <div class="feature-icon">❤️</div>
+    <div class="feature-icon" aria-hidden="true">❤️</div>
 
     <h3>Every Prayer Matters</h3>
 
@@ -230,7 +249,7 @@
         <div class="feature-grid">
 
           <div class="feature-card">
-    <div class="feature-icon">✨</div>
+    <div class="feature-icon" aria-hidden="true">✨</div>
 
     <h3>Answered Prayer</h3>
 
@@ -241,7 +260,7 @@
         
 
           <div class="feature-card">
-    <div class="feature-icon">🌿</div>
+    <div class="feature-icon" aria-hidden="true">🌿</div>
 
     <h3>Strength for the Journey</h3>
 
@@ -250,7 +269,7 @@
     </p>
 </div>  
           <div class="feature-card">
-    <div class="feature-icon">🙌</div>
+    <div class="feature-icon" aria-hidden="true">🙌</div>
 
     <h3>Give God the Glory</h3>
 
@@ -261,12 +280,14 @@
 
         </div>
 
+    </div>
+
     </section>
     <!-- =========================
      FEATURED VIDEO
 ========================= -->
 
-<section class="featured-video reveal" id="featured-video">
+<section class="featured-video reveal" id="contact">
 
     <div class="container">
 
@@ -282,10 +303,12 @@
     Menuchah Haven is more than a website—it is a place where hearts are continually invited to encounter Christ. Stay connected as new worship, biblical teaching, devotionals, prayer resources, and opportunities for fellowship become available. Wherever God leads this ministry, our desire is to walk that journey together with you.
 </p> 
 
+   <div class="feature-grid">
+
    <div class="feature-card">
 
-    <div class="feature-icon">
-        <i class="fa-solid fa-envelope"></i>
+    <div class="feature-icon" aria-hidden="true">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
     </div>
 
     <h3>Email Updates</h3>
@@ -297,8 +320,8 @@
 </div>  
    <div class="feature-card">
 
-    <div class="feature-icon">
-        <i class="fa-solid fa-music"></i>
+    <div class="feature-icon" aria-hidden="true">
+        <i class="fa-solid fa-music" aria-hidden="true"></i>
     </div>
 
     <h3>Worship & Biblical Resources</h3>
@@ -310,8 +333,8 @@
 </div>
 <div class="feature-card">
 
-    <div class="feature-icon">
-        <i class="fa-solid fa-heart"></i>
+    <div class="feature-icon" aria-hidden="true">
+        <i class="fa-solid fa-heart" aria-hidden="true"></i>
     </div>
 
     <h3>Reach Out to Us</h3>
@@ -321,6 +344,8 @@
     </p>
 
 </div>
+
+   </div>
 </div>
 
 </section>
@@ -348,7 +373,7 @@
 
      <div class="feature-card">
 
-    <div class="feature-icon">🌿</div>
+    <div class="feature-icon" aria-hidden="true">🌿</div>
 
     <h3>Keep Seeking Christ</h3>
 
@@ -360,7 +385,7 @@
 
 <div class="feature-card">
 
-    <div class="feature-icon">🤲</div>
+    <div class="feature-icon" aria-hidden="true">🤲</div>
 
     <h3>Walk in Hope</h3>
 
@@ -372,7 +397,7 @@
 
 <div class="feature-card">
 
-    <div class="feature-icon">🕊️</div>
+    <div class="feature-icon" aria-hidden="true">🕊️</div>
 
     <h3>Carry His Peace</h3>
 
@@ -388,6 +413,8 @@
 
 </section>
 
+
+</main>
 
 <footer class="footer">
 
@@ -409,9 +436,9 @@
 
             <a href="#prayer">Prayer</a>
 
-            <a href="#testimonies">testimonies</a>
+            <a href="#testimonies">Testimonies</a>
 
-            <a href="#featured-video">Connect</a>
+            <a href="#contact">Connect</a>
 
             <a href="#coming-soon">Final Word</a>
 
@@ -426,31 +453,7 @@
     </div>
 
 </footer>
-
-<!-- The next section will go here -->
- <script>
-
-const reveals = document.querySelectorAll(".reveal");
-
-const observer = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("active");
-
-        }
-
-    });
-
-},{
-    threshold:0.15
-});
-
-reveals.forEach(section=>observer.observe(section));
-
-</script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

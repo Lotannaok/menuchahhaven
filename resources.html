@@ -40,12 +40,17 @@
     Skip to main content
 </a>   
 
+  <header>
+
   <nav class="navbar">
 
         <div class="logo">
             <a href="index.html">
                 <img src="images/logo.png"
-        alt="Menuchah Haven Logo" > 
+        alt="Menuchah Haven Logo"
+        width="60"
+        height="60"
+        decoding="async"> 
                 <span>Menuchah Haven</span>
     </a>
         </div>
@@ -55,52 +60,53 @@
             <li><a href="index.html">Home</a></li>
 
         <li class="dropdown">
-    <a href="about.html">
-        About <i class="fa-solid fa-chevron-down"></i>
+    <a href="about.html" aria-haspopup="menu" aria-expanded="false">
+        About <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
     </a>
 
-    <ul class="dropdown-menu">
-        <li><a href="about.html#welcome">Welcome</a></li>
-        <li><a href="about.html#why-menuchah-haven-exists">Why Menuchah Haven Exists</a></li>
+    <ul class="dropdown-menu" role="menu">
+        <li role="none"><a href="about.html#our-story" role="menuitem">Our Story</a></li>
+        <li role="none"><a href="about.html#vision" role="menuitem">Vision & Mission</a></li>
+        <li role="none"><a href="about.html#faith" role="menuitem">Statement of Faith</a></li>
+        <li role="none"><a href="about.html#founder" role="menuitem">Founder</a></li>
     </ul>
-</li>    
+</li>
 
             <li class="dropdown">
-                <a href="resources.html" class="active">Resources <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="resources.html#reflections">Menuchah Reflections</a></li>
-                    <li><a href="resources.html#daily-word">A Word for Today</a></li>
+                <a href="resources.html" class="active" aria-haspopup="menu" aria-expanded="false">Resources <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="resources.html#reflections" role="menuitem">Reflections</a></li>
+                    <li role="none"><a href="resources.html#daily-word" role="menuitem">Daily Word</a></li>
+                    <li role="none"><a href="resources.html#bible-studies" role="menuitem">Bible Studies</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
-                <a href="media.html">Media <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="media.html" aria-haspopup="menu" aria-expanded="false">Media <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="media.html#worship">Worship</a></li>
-                    <li><a href="media.html#messages">Messages</a></li>
-                    <li><a href="media.html#podcast">Podcast</a></li>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="media.html#worship" role="menuitem">Worship</a></li>
+                    <li role="none"><a href="media.html#messages" role="menuitem">Messages</a></li>
+                    <li role="none"><a href="media.html#podcast" role="menuitem">Podcast</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
-                <a href="community.html">community <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="community.html" aria-haspopup="menu" aria-expanded="false">Community <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="community.html#contact">contact</a></li>
-                    <li><a href="community.html#prayer">Prayer Request</a></li>
-                    <li><a href="community.html#testimonies">Stories of Hope</a></li>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="community.html#prayer" role="menuitem">Prayer Requests</a></li>
+                    <li role="none"><a href="community.html#testimonies" role="menuitem">Testimonies</a></li>
+                    <li role="none"><a href="community.html#contact" role="menuitem">Contact</a></li>
                 </ul>
             </li>
 
-        
-
-       </ul>
+        </ul>
 
 <button
     class="menu-toggle"
     type="button"
-    aria-label="Open navigation menu"
+    aria-label="Open Menu"
     aria-expanded="false"
     aria-controls="primary-navigation">
     <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -114,7 +120,9 @@
 </a> 
 
     </nav>  
-    
+
+</header>
+
 <!-- =========================
      HERO CONTENT
 ========================= -->
@@ -155,7 +163,7 @@
 <div class="scroll-indicator">
 
     <a href="#reflections">
-        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
     </a>
 
 </div>
@@ -188,7 +196,7 @@
             <article class="reflection-card featured">
 
                 <img src="images/reflection-1.png"
-                     alt="When God Seems Silent">
+                     alt="Reflection card: A serene scene depicting trust and quietness, representing spiritual patience when God seems silent">
 
                 <div class="reflection-content">
 
@@ -209,7 +217,7 @@
             <article class="reflection-card">
 
                 <img src="images/reflection-2.png"
-                     alt="Stop Feeding the Fire">
+                     alt="Reflection card: Imagery illustrating the concept of personal responsibility in healing and breaking cycles">
 
                 <div class="reflection-content">
 
@@ -230,7 +238,7 @@
             <article class="reflection-card">
 
                 <img src="images/reflection-3.png"
-                     alt="The Rest That Comes Before the Answer">
+                     alt="Reflection card: Visual representation of spiritual rest and peace, depicting the calm that precedes divine resolution">
 
                 <div class="reflection-content">
 
@@ -296,7 +304,7 @@
 
 </section>
 
-<section class="coming-soon reveal">
+<section class="coming-soon reveal" id="bible-studies">
 
     <div class="container">
 
@@ -318,7 +326,7 @@
 
 </section>
 
-
+</main>
 
 <footer class="footer">
 
@@ -347,6 +355,12 @@
 
             <a href="community.html">Community</a>
 
+            <a href="contact.html">Contact</a>
+
+            <a href="privacy.html">Privacy Policy</a>
+
+            <a href="terms.html">Terms of Use</a>
+
         </div>
 
         <div class="footer-bottom">
@@ -359,32 +373,8 @@
 
 </footer>
 
-<!-- The next section will go here -->
- <script>
-
-const reveals = document.querySelectorAll(".reveal");
-
-const observer = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("active");
-
-        }
-
-    });
-
-},{
-    threshold:0.15
-});
-
-reveals.forEach(section=>observer.observe(section));
-
-</script>
-
-</main>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>

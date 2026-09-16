@@ -15,7 +15,15 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
-      <link rel="icon" type="image/png" href="images/favicon.png">
+      <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet"
           href="css/about.css">
 
@@ -29,12 +37,17 @@
     Skip to main content
 </a>   
 
+  <header>
+
   <nav class="navbar">
 
         <div class="logo">
             <a href="index.html">
                 <img src="images/logo.png"
-        alt="Menuchah Haven Logo" > 
+        alt="Menuchah Haven Logo"
+        width="60"
+        height="60"
+        decoding="async">
                 <span>Menuchah Haven</span>
     </a>
         </div>
@@ -44,51 +57,52 @@
             <li><a href="index.html">Home</a></li>
 
             <li class="dropdown">
-            <a href="about.html" class="active">
-    About <i class="fa-solid fa-chevron-down"></i>
-</a>    
-                <ul class="dropdown-menu">
-                    <li><a href="about.html#welcome">Welcome</a></li>
-                    <li><a href="about.html#why-menuchah-haven-exists">Why Menuchah Haven Exists</a></li>
+            <a href="about.html" class="active" aria-haspopup="menu" aria-expanded="false">
+    About <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="about.html#our-story" role="menuitem">Our Story</a></li>
+                    <li role="none"><a href="about.html#vision" role="menuitem">Vision & Mission</a></li>
+                    <li role="none"><a href="about.html#faith" role="menuitem">Statement of Faith</a></li>
+                    <li role="none"><a href="about.html#founder" role="menuitem">Founder</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
-                <a href="resources.html">Resources <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="resources.html#reflections">Menuchah Reflections</a></li>
-                    <li><a href="resources.html#daily-word">A Word for Today</a></li>
+                <a href="resources.html" aria-haspopup="menu" aria-expanded="false">Resources <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="resources.html#reflections" role="menuitem">Reflections</a></li>
+                    <li role="none"><a href="resources.html#daily-word" role="menuitem">Daily Word</a></li>
+                    <li role="none"><a href="resources.html#bible-studies" role="menuitem">Bible Studies</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
-                <a href="media.html">Media <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="media.html" aria-haspopup="menu" aria-expanded="false">Media <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="media.html#worship">Worship</a></li>
-                    <li><a href="media.html#messages">Messages</a></li>
-                    <li><a href="media.html#podcast">Podcast</a></li>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="media.html#worship" role="menuitem">Worship</a></li>
+                    <li role="none"><a href="media.html#messages" role="menuitem">Messages</a></li>
+                    <li role="none"><a href="media.html#podcast" role="menuitem">Podcast</a></li>
                 </ul>
             </li>
 
             <li class="dropdown">
-                <a href="community.html">community <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="community.html" aria-haspopup="menu" aria-expanded="false">Community <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="community.html#contact">contact</a></li>
-                    <li><a href="community.html#prayer">Prayer Request</a></li>
-                    <li><a href="community.html#testimonies">Stories of Hope</a></li>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a href="community.html#prayer" role="menuitem">Prayer Requests</a></li>
+                    <li role="none"><a href="community.html#testimonies" role="menuitem">Testimonies</a></li>
+                    <li role="none"><a href="community.html#contact" role="menuitem">Contact</a></li>
                 </ul>
             </li>
-
-        
 
        </ul>
 
 <button
     class="menu-toggle"
     type="button"
-    aria-label="Open navigation menu"
+    aria-label="Open Menu"
     aria-expanded="false"
     aria-controls="primary-navigation">
     <i class="fa-solid fa-bars" aria-hidden="true"></i>
@@ -99,9 +113,12 @@
     class="nav-button"
     aria-label="Request prayer and counseling">
     Request Prayer
-</a> 
+</a>
 
-    </nav>  
+    </nav>
+
+  </header>
+
     <main id="main-content">
 <section class="about-hero" id="welcome">
 
@@ -117,12 +134,12 @@
     </div>
 
 </section>
-<section class="our-story" id="why-menuchah-haven-exists">
+<section class="our-story" id="our-story">
 
     <div class="container story-grid">
 
         <div class="story-image">
-            <img src="images/mission.png" alt="Why Menuchah Haven Exists">
+            <img src="images/mission.png" alt="Visual representation of Menuchah Haven's mission to create a quiet spiritual space for encountering God">
         </div>
 
         <div class="story-content">
@@ -153,7 +170,12 @@
             </p>
 
         </div>
-       <section class="timeline-section">
+
+    </div>
+
+</section>
+
+<section class="timeline-section">
 
     <div class="container">
 
@@ -200,10 +222,8 @@
     </div>
 
 </section>
-    </div>
 
-</section>
-<section class="vision-section">
+<section class="vision-section" id="vision">
 
     <div class="container">
 
@@ -274,7 +294,14 @@
                 <h3>Excellence</h3>
                 <p>We pursue excellence because our work reflects the God we serve.</p>
             </div>
-        <section class="impact-section">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="impact-section">
 
     <div class="container">
 
@@ -317,12 +344,8 @@
     </div>
 
 </section>
-        </div>
 
-    </div>
-
-</section>
-<section class="faith-section">
+<section class="faith-section" id="faith">
 
     <div class="container">
 
@@ -352,13 +375,13 @@
     </div>
        
 </section>
-<section class="founder-section">
+<section class="founder-section" id="founder">
 
     <div class="container founder-grid">
 
         <div class="founder-image">
             <img src="images/founder.jpg"
-                 alt="Founder of Menuchah Haven">
+                 alt="Portrait of Lotanna Edwin Okwuchukwu, Founder and Lead Pastor of Menuchah Haven">
         </div>
 
         <div class="founder-content">
@@ -411,7 +434,10 @@
         </p>
 
     </div>
-      <section class="approach-section">
+
+</section>
+
+<section class="approach-section">
 
     <div class="container">
 
@@ -458,7 +484,7 @@
     </div>
 
 </section>
-</section>
+
 <section class="journey-section">
 
     <div class="container">
@@ -490,6 +516,46 @@
 
 </section>
 </main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-brand">
+
+            <h3>Menuchah Haven</h3>
+
+            <p>
+                A place of rest where hearts encounter Christ through Scripture, worship, prayer, and quiet reflection.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+          <a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="resources.html">Resources</a>
+<a href="media.html">Media</a>
+<a href="community.html">Community</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Menuchah Haven. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 
 </html>
