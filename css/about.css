@@ -18,7 +18,7 @@
         rgba(10,20,18, 0.70),
         rgba(10,20,18,.70)
     ),
-    url("../images/mission.png");
+    url("../images/mission.webp");
 
     background-size:cover;
     background-position:center;
@@ -167,7 +167,7 @@
         rgba(14,24,18,.90),
         rgba(14,24,18,.90)
     ),
-    url("../images/mission.png");
+    url("../images/mission.webp");
 
     background-size:cover;
     background-position:center;
@@ -356,6 +356,41 @@
     display:block;
 
     box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+/* Fallback shown until the founder photograph is provided */
+.founder-image.founder-image-missing{
+
+    min-height:420px;
+
+    border-radius:20px;
+
+    background:linear-gradient(160deg, #1F4D3A 0%, #2E6B52 100%);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.founder-image.founder-image-missing::before{
+
+    content:"\f007";
+
+    font-family:"Font Awesome 6 Free";
+
+    font-weight:900;
+
+    font-size:5rem;
+
+    color:var(--accent, #C8A96A);
+
+    opacity:.55;
 
 }
 

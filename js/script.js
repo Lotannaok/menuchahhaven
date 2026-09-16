@@ -1,22 +1,69 @@
 // ===============================
-// Navbar Scroll Effect
+// Scroll Effects
+// (navbar, progress bar, back-to-top, hero parallax
+// share one passive, rAF-throttled listener)
 // ===============================
 
 const navbar = document.querySelector(".navbar");
+const hero = document.querySelector(".hero");
+const scrollProgress = document.querySelector("#scroll-progress");
+const backToTop = document.querySelector("#back-to-top");
 
-if (navbar) {
+let scrollTicking = false;
 
-    window.addEventListener("scroll", () => {
+function updateScrollEffects() {
 
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
+    scrollTicking = false;
 
-    });
+    const scrollY = window.scrollY;
+
+    if (navbar) {
+        navbar.classList.toggle("scrolled", scrollY > 50);
+    }
+
+    if (backToTop) {
+        backToTop.classList.toggle("show", scrollY > 600);
+    }
+
+    if (scrollProgress) {
+
+        const scrollTop =
+            document.documentElement.scrollTop ||
+            document.body.scrollTop;
+
+        const scrollHeight =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const scrollPercent =
+            scrollHeight > 0
+                ? (scrollTop / scrollHeight) * 100
+                : 0;
+
+        scrollProgress.style.width = `${scrollPercent}%`;
+
+    }
+
+    if (hero && window.innerWidth > 768 && scrollY <= hero.offsetHeight) {
+        hero.style.backgroundPosition =
+            `center calc(50% + ${scrollY * 0.08}px)`;
+    }
 
 }
+
+function onScroll() {
+
+    if (scrollTicking) return;
+
+    scrollTicking = true;
+    requestAnimationFrame(updateScrollEffects);
+
+}
+
+window.addEventListener("scroll", onScroll, { passive: true });
+
+// Apply the correct state on initial load
+updateScrollEffects();
 
 
 // ===============================
@@ -378,66 +425,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 });
 // ===============================
-// Gentle Hero Parallax
-// ===============================
-
-const hero = document.querySelector(".hero");
-
-window.addEventListener("scroll", () => {
-
-    if (!hero || window.innerWidth <= 768) return;
-
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition <= hero.offsetHeight) {
-        hero.style.backgroundPosition =
-            `center calc(50% + ${scrollPosition * 0.08}px)`;
-    }
-
-});
-// ===============================
-// Scroll Progress Indicator
-// ===============================
-
-const scrollProgress = document.querySelector("#scroll-progress");
-
-window.addEventListener("scroll", () => {
-
-    if (!scrollProgress) return;
-
-    const scrollTop =
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-
-    const scrollHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-
-  const scrollPercent =
-    scrollHeight > 0
-        ? (scrollTop / scrollHeight) * 100
-        : 0;
-
-scrollProgress.style.width = `${scrollPercent}%`;  
-
-});
-// ===============================
 // Back to Top Button
+// (scroll visibility is handled in updateScrollEffects)
 // ===============================
-
-const backToTop = document.querySelector("#back-to-top");
 
 if (backToTop) {
-
-    window.addEventListener("scroll", () => {
-
-        if (window.scrollY > 600) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
-
-    });
 
     backToTop.addEventListener("click", () => {
 

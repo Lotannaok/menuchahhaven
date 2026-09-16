@@ -10,6 +10,7 @@
     --primary: #1F4D3A;
     --secondary: #7A9E7E;
     --accent: #C8A96A;
+    --accent-ink: #7A6134;
 
     --background: #F8F6F1;
     --white: #FFFFFF;
@@ -386,7 +387,7 @@ visibility:visible;
 
     background:#f6f6f6;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
 }
 
@@ -551,7 +552,7 @@ visibility:visible;
 
     background:
         linear-gradient(rgba(12,25,20,.55), rgba(12,25,20,.68)),
-        url("../images/hero.png") center/cover no-repeat;
+        url("../images/hero.webp") center/cover no-repeat;
 
     overflow: hidden;
 }
@@ -570,19 +571,6 @@ visibility:visible;
         transparent 35%);
         pointer-events:none;
 
-}
-
-.hero-content h1{
-    font-size:clamp(3.5rem,7vw,5.8rem);
-    line-height:1.05;
-    color:#fff;
-    text-shadow:0 8px 30px rgba(0,0,0,.35);
-}
-
-.hero-description{
-    color:rgba(255,255,255,.92);
-    font-size:1.2rem;
-    max-width:640px;
 }
 
 .hero-tagline{
@@ -617,6 +605,10 @@ visibility:visible;
     margin-left: -8px;
 
     font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
 
 }
 
@@ -691,7 +683,7 @@ visibility:visible;
 
 .section-tag{
     display:inline-block;
-    color:var(--accent);
+    color:var(--accent-ink);
     font-size:.9rem;
     font-weight:700;
     letter-spacing:4px;
@@ -864,7 +856,7 @@ visibility:visible;
             rgba(12,25,20,.45),
             rgba(12,25,20,.65)
         ),
-        url("../images/mission.png") center 30%/cover no-repeat;
+        url("../images/mission.webp") center 30%/cover no-repeat;
 
     box-shadow:
         0 30px 80px rgba(0,0,0,.18),
@@ -1149,7 +1141,7 @@ transition:var(--transition-normal);
 
     gap:8px;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-weight:600;
 
@@ -1221,7 +1213,7 @@ transition:var(--transition-normal);
 }
 .still-reference{
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-size:1.1rem;
 
@@ -1421,7 +1413,7 @@ transition:all .3s ease;
 
     gap:8px;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-weight:600;
 
@@ -1597,7 +1589,7 @@ transition:all .3s ease;
     height:260px;
     border-radius:18px;
 
-    background:url("../images/do-it-again.png") center/cover no-repeat;
+    background:url("../images/do-it-again.webp") center/cover no-repeat;
 
     margin-bottom:30px;
 
@@ -1642,7 +1634,7 @@ transition:all .3s ease;
 
     gap:8px;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-weight:600;
 
@@ -1765,7 +1757,7 @@ transition:all .3s ease;
 
     left:0;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-weight:bold;
 
@@ -1776,7 +1768,7 @@ transition:all .3s ease;
 
     border-radius:28px;
 
-    background-image:url("../images/prayer-and-counseling.png");
+    background-image:url("../images/prayer-and-counseling.webp");
 
     background-size:cover;
     background-position:center;
@@ -1881,7 +1873,7 @@ transition:all .3s ease;
 }
 .daily-reference{
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-size:1.1rem;
 
@@ -2676,7 +2668,7 @@ transition:all .3s ease;
 
     margin-bottom:52px;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-size:.72rem;
     font-weight:600;
@@ -2687,7 +2679,7 @@ transition:all .3s ease;
 .welcome-path-content i{
     margin-bottom:24px;
 
-    color:var(--accent);
+    color:var(--accent-ink);
 
     font-size:1.35rem;
 }
@@ -3084,7 +3076,7 @@ transition:all .3s ease;
     overflow: hidden;
     background:
         linear-gradient(rgba(10,20,16,.68), rgba(10,20,16,.78)),
-        url("../images/hero.png") center/cover no-repeat;
+        url("../images/hero.webp") center/cover no-repeat;
 }
 
 .contact-hero::after,
@@ -3184,7 +3176,7 @@ transition:all .3s ease;
 }
 
 .error-scripture cite {
-    color: var(--accent);
+    color: var(--accent-ink);
     font-style: normal;
     font-weight: 600;
     letter-spacing: 2px;
@@ -3320,7 +3312,7 @@ transition:all .3s ease;
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--accent);
+    color: var(--accent-ink);
     font-weight: bold;
 }
 
@@ -3382,7 +3374,7 @@ transition:all .3s ease;
 }
 
 .privacy-card a {
-    color: var(--accent);
+    color: var(--accent-ink);
     font-weight: 600;
 }
 
@@ -3653,7 +3645,7 @@ transition:all .3s ease;
     color: #fff;
     background:
         linear-gradient(rgba(12,25,20,.82), rgba(12,25,20,.9)),
-        url("../images/hero.png") center/cover no-repeat;
+        url("../images/hero.webp") center/cover no-repeat;
     box-shadow: var(--shadow-lg);
 }
 

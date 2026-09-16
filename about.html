@@ -15,7 +15,27 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
-      <link rel="icon" type="image/png" href="images/logo.png">
+      <link rel="icon" type="image/png" href="images/logo-512.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://menuchahhaven.com/about.html">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Menuchah Haven">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About | Menuchah Haven">
+    <meta property="og:description" content="Learn the story, vision, mission, values, and biblical foundation of Menuchah Haven—a Christ-centered ministry helping weary hearts find rest, hope, and truth in Jesus Christ.">
+    <meta property="og:url" content="https://menuchahhaven.com/about.html">
+    <meta property="og:image" content="https://menuchahhaven.com/images/hero.png">
+    <meta property="og:image:width" content="1983">
+    <meta property="og:image:height" content="793">
+    <meta property="og:image:alt" content="Menuchah Haven website hero image">
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About | Menuchah Haven">
+    <meta name="twitter:description" content="Learn the story, vision, mission, values, and biblical foundation of Menuchah Haven—a Christ-centered ministry helping weary hearts find rest, hope, and truth in Jesus Christ.">
+    <meta name="twitter:image" content="https://menuchahhaven.com/images/hero.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +43,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <link rel="preload" as="image" href="images/mission.webp" fetchpriority="high">
 
     <link rel="stylesheet"
           href="css/about.css">
@@ -43,7 +67,7 @@
 
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo.png"
+                <img src="images/logo.webp"
         alt="Menuchah Haven Logo"
         width="60"
         height="60"
@@ -139,7 +163,7 @@
     <div class="container story-grid">
 
         <div class="story-image">
-            <img src="images/mission.png" alt="Visual representation of Menuchah Haven's mission to create a quiet spiritual space for encountering God">
+            <img src="images/mission.webp" alt="Visual representation of Menuchah Haven's mission to create a quiet spiritual space for encountering God" width="1536" height="1024" loading="lazy" decoding="async">
         </div>
 
         <div class="story-content">
@@ -381,7 +405,10 @@
 
         <div class="founder-image">
             <img src="images/founder.jpg"
-                 alt="Portrait of Lotanna Edwin Okwuchukwu, Founder and Lead Pastor of Menuchah Haven">
+                 alt="Portrait of Lotanna Edwin Okwuchukwu, Founder and Lead Pastor of Menuchah Haven"
+                 loading="lazy"
+                 decoding="async"
+                 onerror="this.parentElement.classList.add('founder-image-missing'); this.remove();">
         </div>
 
         <div class="founder-content">
